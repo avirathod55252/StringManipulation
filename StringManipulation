@@ -1,0 +1,44 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+namespace exp2staticclass
+{
+ internal class Program
+ {
+ 
+ static void Main(string[] args)
+ {
+ string input = "Hello, World!";
+ // Length of the string
+ int length = input.Length;
+ Console.WriteLine("Length: " + length);
+ // Converting to uppercase
+ string uppercase = input.ToUpper();
+ Console.WriteLine("Uppercase: " + uppercase);
+ // Converting to lowercase
+ string lowercase = input.ToLower();
+ Console.WriteLine("Lowercase: " + lowercase);
+ // Substring
+ string substring = input.Substring(7, 5);
+ Console.WriteLine("Substring: " + substring);
+ // Splitting the string
+ string[] splitArray = input.Split(',');
+ Console.WriteLine("Splitting the string:");
+ foreach (string str in splitArray)
+ {
+ Console.WriteLine(str.Trim());
+ }
+ // Replacing a substring
+ string replaced = input.Replace("Hello", "Hi");
+ Console.WriteLine("Replaced: " + replaced);
+ // Removing leading and trailing whitespaces
+ string trimmed = input.Trim();
+ Console.WriteLine("Trimmed: " + trimmed);
+ 
+ 
+ Console.ReadLine();
+ }
+ }
+}
